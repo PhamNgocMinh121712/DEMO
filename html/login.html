@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <div class="header">
+        <nav id="navbar">
+            <img src="../img/snapedit_1698547212304.png" class="logo">
+            <ul id="menu">
+                <li><a href="../index.html">HOME</a></li>
+                <li><a href="../index.html">ABOUT</a></li>
+                <li><a href="../index.html">SERVICES</a></li>
+                <li><a href="../login.html">LOGIN IN</a></li>
+                <li><a href="../sign.html">REGISTER</a></li>
+            </ul>
+        </nav>
+   </div>
+
+    <div class="wrapper">
+            <form action="">
+                <h1>Login </h1>
+                <div class="input-box">
+                    <input type="text" placeholder="Username" required>
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="password" placeholder="Password" required>
+                    <i class='bx bxs-lock-alt'></i>
+                </div>
+
+                <div class="remember-forgot">
+                    <label><input type="checkbox"> Remember me</label>
+                    <a href="#">Forgot password</a>
+                </div>
+
+                <button type="submit" class="btn">Login</button>
+
+                <div class="register-link">
+                    <p>Don't have an account? <a href="./sign.html">register</a></p>
+                </div>
+            </form>
+    </div>
+
+    <script>
+        var navbar = document.getElementById("navbar");
+        var menu = document.getElementById("menu");
+    
+        window.onscroll = function(){
+                if(window.pageYOffset >= menu.offsetTop){
+                    navbar.classList.add("sticky");
+                }
+                else{
+                    navbar.classList.remove("sticky");
+                }
+        }
+    
+    </script>
+</body>
+</html>
